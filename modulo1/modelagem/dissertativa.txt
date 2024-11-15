@@ -1,0 +1,75 @@
+____Respostas no final da página____
+
+Exercício - Modelagem
+1) Tire um tempo para refletir sobre tudo que vimos nesta aula que, apesar de teórica,
+é muito importante. Hoje em dia é muito fácil obter trechos de código usando
+ferramentas na internet mas, é preciso entender o porquê e se faz sentido. E como
+futura pessoa desenvolvedora, você é que vai fornecer essas respostas aos
+porquês.
+ 
+2) Imagine que você está desenvolvendo um sistema de gerenciamento de uma
+biblioteca. Neste sistema, é necessário modelar livros, autores, usuários,
+empréstimos e devoluções. Cada livro possui informações como título, autor e
+gênero. Os autores têm nome, nacionalidade e obras publicadas. Os usuários da
+biblioteca têm nome, idade e histórico de empréstimos. Os empréstimos registram a
+data de retirada e devolução, além do livro e usuário envolvidos.
+Com base no cenário descrito, analise qual paradigma de programação seria mais
+indicado para implementar o sistema de gerenciamento da biblioteca:
+a) programação estruturada
+b) programação imperativa
+c) programação orientada a objetos ou
+d) programação funcional
+Justifique sua escolha considerando a estrutura e as interações entre os objetos do
+Sistema.
+Para facilitar, considere pontos como:
+- Estrutura e interação das entidades do sistema (Livros, autores, usuários e
+demais)
+- Reuso
+- Qual paradigma facilitaria a evolução do sistema, no futuro
+- Eficiência, dado o cenário apresentado
+Dica: A combinação dos paradigmas de programação pode ser viável em certos
+contextos, mas geralmente não é recomendada devido a diferenças fundamentais
+entre os paradigmas
+
+
+3) Você deve ter percebido que nossas aulas tem vários diagramas. Eles ajudam na
+correta compreensão dos conceitos e, quando projetamos sistemas reais, esses
+recursos nos ajudam a entender alguns detalhes de implementação e viabilidade do
+que estamos fazendo. Neste exercício, você vai criar seu primeiro diagrama!
+Antes de começar a desenhar, tenha em mãos as seguintes respostas:
+ 
+- Quais serão os elementos (classes) do diagrama?
+- Com os conhecimentos que você já tem em programação, consegue pensar
+no tipo de cada propriedade? Por exemplo, no caso do livro, qual seria o tipo
+da propriedade “Título”? Seria uma string, um número, ou outro tipo?
+- Qual seria o relacionamento entre os elementos? Pense em relacionamentos
+1 para 1 e 1 para muitos
+Regras:
+- Seu diagrama deve estar de acordo com o que você definiu no exercício anterior,
+em Elementos de diagrama e Relações entre elementos
+ 
+4) Agora, vamos acrescentar mais alguns detalhes ao seu diagrama! Já desenhamos o
+diagrama de classes, contendo propriedades e relacionamentos entre os objetos.
+Agora, você vai receber os fluxos do nosso sistema de gerenciamento! Precisamos
+dessas informações para completar nosso exercício, que vai ser adicionar os
+métodos às nossas classes, de acordo com o que o sistema deve fazer. Para
+facilitar, vamos deixar os fluxos mais simples para o nosso projeto de aula.
+Fluxo de Empréstimo de Livros
+1. O usuário solicita o empréstimo de um ou mais livros.
+2. O sistema verifica se o usuário está apto a realizar o empréstimo:
+a. Consulta o nome do usuário para identificá-lo
+b. Verificar o histórico de empréstimos do usuário para ver se ele não
+possui livros vencidos.
+c. Verificar a idade do usuário, caso o livro solicitado seja de um gênero
+impróprio para menores de 18 anos.
+3. Se o usuário estiver apto, o sistema:
+a. Registra a data de retirada do livro.
+b. Registra a data prevista de devolução.
+c. Associar o livro emprestado e o usuário que realizou o empréstimo.
+4. Caso o usuário não esteja apto, o sistema recusa o empréstimo
+
+Respostas: 
+2 - Letra C, pois para uma situação em que existem diversas entidades dentro de uma biblioteca, os métodos de POO são os mais viáveis para se trabalhar, além de promover o reuso do código caso haja alterações futuramente.
+
+3 e 4 -  
+Diagrama:  
